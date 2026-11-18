@@ -246,3 +246,6 @@ fieldset.sizes{border:0;padding:0;margin:0;min-width:0}
 .home-main>.hero-media{position:fixed;z-index:0}
 .hero-title .l1,.hero-title .push{clip-path:inset(0 -2% 0 0)}
 .pre .l1,.pre .push{clip-path:inset(0 100% 0 0)}
+/* v5 fix: header must sit above the fixed hero video (main is later in DOM with the same z-index, so it painted over the nav) */
+.home .nav{z-index:5}
+.home .brand{font-size:clamp(34px,3vw,46px);text-shadow:0 2px 24px #0a0a0a99}
